@@ -23,7 +23,7 @@
     />
     <meta
       property="og:image"
-      content="https://raw.githubusercontent.com/Prashant-S29/converge-event-form/refs/heads/main/assets/og_image.png"
+      content="https://raw.githubusercontent.com/Prashant-S29/converge-event-form/refs/heads/main/assets/og_image.png "
     />
 
     <!-- Twitter -->
@@ -36,22 +36,13 @@
     />
     <meta
       property="twitter:image"
-      content="https://raw.githubusercontent.com/Prashant-S29/converge-event-form/refs/heads/main/assets/og_image.png"
+      content="https://raw.githubusercontent.com/Prashant-S29/converge-event-form/refs/heads/main/assets/og_image.png "
     />
 
-    <!-- Favicon -->
-    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> -->
-    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
 
-    <!-- CSS Stylesheet -->
-
-    <!-- Canonical URL (Important for SEO) -->
+    <!-- TODO: Add Favicon -->
+    
     <link rel="canonical" href="https://converge-form.vercel.app" />
-
-    <!-- JavaScript (Place before  for faster rendering) -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
       * {
@@ -182,7 +173,7 @@
     <!-- Registration Form -->
     <div class="max-[450px]:p-0 p-[30px] md:px-[50px] w-full">
       <div
-        class="max-[450px]:border-none border border-gray-400 overflow-hidden rounded-[30px] lg:flex block w-full h-full"
+        class="max-[450px]:border-none border border-gray-400 overflow-hidden rounded-[30px] flex-col-reverse  flex lg:flex-row block w-full h-full"
       >
         <div
           class="max-[450px]:p-5 lg:min-w-[40%] p-[40px] lg:border-r border-gray-400"
@@ -387,27 +378,20 @@
 
     <script>
       const scriptURL =
-        'https://script.google.com/macros/s/AKfycbycoJwSTVUI4A36onyquwXjCBJpn7Ubk_8bZzrTB2mX9Eqcok8TnBsGse51fApK-5bL/exec'; // Replace with your Web App URL
+        'https://script.google.com/macros/s/AKfycbycoJwSTVUI4A36onyquwXjCBJpn7Ubk_8bZzrTB2mX9Eqcok8TnBsGse51fApK-5bL/exec';
       const form = document.getElementById('registrationform');
-      // const formElements = form.elements; // Get all form elements
-      const submitButton = form.querySelector('button'); // Get the submit button
+
+      const submitButton = form.querySelector('button'); 
       const inputs = form.querySelectorAll('input');
 
       form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        // Optionally change the button text or add a spinner
         submitButton.textContent = 'Submitting...';
         submitButton.disabled = true;
 
         inputs.forEach((input) => (input.disabled = true));
 
-        // const formData = new FormData(form);
-
-        // // console.log(formData)
-        // for (const pair of formData.entries()) {
-        //   console.log(pair[0] + ': ' + pair[1]);
-        // }
 
         // get all the values from
         let name = document.getElementById('firstName').value;
@@ -418,7 +402,6 @@
         let contactNumber = document.getElementById('contactNumber').value;
         let sendUpdates = document.getElementById('sendUpdates').checked;
 
-        // create a new formData
         const formData = new FormData();
         formData.append('First Name', name);
         formData.append('Last Name', lastname);
@@ -427,7 +410,6 @@
         formData.append('Email Address', email);
         formData.append('Contact Number', contactNumber);
 
-        // const formData = new FormData(form);
         for (const pair of formData.entries()) {
           console.log(pair[0] + ': ' + pair[1]);
         }
@@ -443,14 +425,10 @@
         })
           .then((response) => response.json())
           .then((data) => {
-            // Re-enable all form elements after the response is received
-            // for (let i = 0; i < formElements.length; i++) {
-            //   formElements[i].disabled = false;
-            // }
 
             console.log(data);
 
-            submitButton.textContent = 'Register Now'; // Restore original button text
+            submitButton.textContent = 'Register Now';
             submitButton.disabled = false;
 
             inputs.forEach((input) => (input.disabled = false));
