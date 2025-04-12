@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>Your Website Title | Catchy Description</title>
+    <meta
+      name="description"
+      content="A concise and engaging description of your website. Use relevant keywords to improve search engine visibility."
+    />
+    <meta
+      name="keywords"
+      content="keywords, relevant, to, your, website, separated, by, commas"
+    />
+    <meta name="author" content="Your Name or Company Name" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.yourdomain.com/" />
+    <meta property="og:title" content="Your Website Title" />
+    <meta
+      property="og:description"
+      content="A concise and engaging description of your website for social media."
+    />
+    <meta property="og:image" content="https://www.yourdomain.com/image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.yourdomain.com/" />
+    <meta property="twitter:title" content="Your Website Title" />
+    <meta
+      property="twitter:description"
+      content="A concise and engaging description of your website for Twitter."
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.yourdomain.com/image.jpg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- CSS Stylesheet -->
+
+    <!-- Canonical URL (Important for SEO) -->
+    <link rel="canonical" href="https://www.yourdomain.com/" />
+
+    <!-- JavaScript (Place before  for faster rendering) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      * {
+        scroll-behavior: smooth;
+        scroll-padding: 50px;
+        box-sizing: border-box;
+      }
+
+      input:disabled,
+      textarea:disabled,
+      select:disabled,
+      button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col max-[450px]:gap-5 gap-[50px] pb-[50px]">
+    <div
+      class="w-full p-5 relative overflow-hidden h-screen flex max-[450px]:gap-5 relative flex-col justify-center items-center"
+    >
+      <div
+        class="absolute -z-10 -top-[100px] max-[450px]:-left-[100px] -left-[70px] md:-left-[50px] bg-[#024ad8] w-[150px] h-[400px] rotate-[30deg]"
+      ></div>
+      <div
+        class="absolute -z-10 -top-[10px] max-[450px]:-right-[450px] -right-[350px] md:-right-[250px] xl:-right-[120px] bg-[#024ad8] w-[350px] h-[130vh] rotate-[30deg]"
+      ></div>
+      <h1 class="font-bold text-[24px] md:text-[30px] xl:text-[40px]">
+        Exclusive Invite
+      </h1>
+
+      <img
+        src="./assets/HP_Poly-experience.png"
+        alt="HP_Poly-experience"
+        class="w-[250px]"
+      />
+      <img src="./assets/Converge.png" alt="Converge" class="-mt-9" />
+
+      <section class="text-center">
+        <h3
+          class="text-[30px] sm:text-[34px] md:text-[40px] xl:text-[50px] font-bold"
+        >
+          Empowering Hybrid Workforces
+        </h3>
+        <p
+          class="max-[450px]:text-[16px] text-[20px] sm:text-[22px] md:text-[24px] xl:text-[30px] font-medium"
+        >
+          Seamless Collaboration for the Future
+        </p>
+      </section>
+
+      <a href="#registrationform" class="mt-6">
+        <button
+          class="px-6 cursor-pointer py-3 bg-[#fe4f4f] rounded-full shadow-[0_10px_20px_rgb(254,79,79,0.3)] font-medium text-white"
+        >
+          Register Now
+        </button>
+      </a>
+    </div>
+
+    <div class="px-5 w-full flex justify-center">
+      <section
+        class="grid justify-center items-center gap-[30px] lg:gap-[0px] xl:gap-[50px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        <div class="flex items-center gap-3">
+          <img src="./assets/Date.png" alt="Date" class="w-[50px]" />
+
+          <div>
+            <p class="text-sm font-bold">Date</p>
+            <h4 class="max-[450px]:text-lg text-xl -mt-1">May 09, 2025</h4>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="./assets/Time.png" alt="Time" class="w-[50px]" />
+
+          <div>
+            <p class="text-sm font-bold">Time</p>
+            <h4 class="max-[450px]:text-lg text-xl -mt-1">06:00 PM Onwards</h4>
+          </div>
+        </div>
+        <div
+          class="flex items-center gap-3 max-[450px]:col-span-1 lg:col-span-1 col-span-2"
+        >
+          <img src="./assets/Venue.png" alt="Venue" class="w-[50px]" />
+
+          <div>
+            <p class="text-sm font-bold">Venue</p>
+            <h4 class="max-[450px]:text-lg text-xl -mt-1">
+              Welcome Hotel by ITC Hotels
+            </h4>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="flex flex-col md:flex-row gap-5 md:gap-0 w-full overflow-hidden relative items-center"
+    >
+      <div
+        class="bg-[#024ad8] w-[100px] hidden md:block absolute -z-10 right-0 -top-[20px] h-[400px] md:h-[500px] rotate-[30deg]"
+      ></div>
+      <div class="p-5 md:p-0 w-full md:max-w-[50%]">
+        <div
+          class="relative w-full md:min-w-[50%] h-[300px] md:h-[400px] bg-cover bg-center overflow-hidden bg-gray-200"
+          style="background-image: url('./assets/HP_Poly-image.png')"
+        >
+          <div
+            class="bg-white h-[650px] max-[450px]:hidden md:h-[550px] absolute w-[250px] -top-[50px] -right-[100px] rotate-[30deg]"
+          ></div>
+        </div>
+      </div>
+      <div class="md:-ml-[50px] px-5 md:px-0 xl:-ml-0 z-10">
+        <section class="w-full md:max-w-[400px] xl:max-w-[500px]">
+          <h1 class="text-[30px] md:text-[40px] font-bold leading-tight">
+            Experience the Best in Hybrid Work Solutions
+          </h1>
+          <p class="mt-3 md:mt-5">
+            Hybrid work opens up new possibilities for organizations re-shaping
+            company culture, attracting & retaining top talent, boosting
+            employee satisfaction, & enhancing customer engagement. Discover
+            seamless hybrid work experiences and intelligent meeting solutions
+            designed for the future of work
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="max-[450px]:p-0 p-[30px] md:px-[50px] w-full">
+      <div
+        class="max-[450px]:border-none border border-gray-400 overflow-hidden rounded-[30px] lg:flex block w-full h-full"
+      >
+        <div
+          class="max-[450px]:p-5 lg:min-w-[40%] p-[40px] lg:border-r border-gray-400"
+        >
+          <h1 class="text-[30px] font-bold">Register Now</h1>
+
+          <!-- <form
+            class="mt-9 flex flex-col gap-2"
+            id="registrationform"
+            method="post"
+          >
+            <div class="grid grid-cols-2 gap-2">
+              <input
+                name="First Name"
+                type="text"
+                id="firstName"
+                required
+                class="border border-gray-400 px-5 py-2 rounded-lg"
+                placeholder="First Name"
+              />
+
+              <input
+                name="Last Name"
+                type="text"
+                id="lastName"
+                required
+                class="border border-gray-400 px-5 py-2 rounded-lg"
+                placeholder="Last Name"
+              />
+            </div>
+
+            <input
+              name="Organization"
+              type="text"
+              id="organization"
+              required
+              class="border border-gray-400 px-5 py-2 rounded-lg"
+              placeholder="Organization"
+            />
+
+            <input
+              name="Designation"
+              id="designation"
+              required
+              class="border border-gray-400 px-5 py-2 rounded-lg"
+              placeholder="Designation"
+            />
+
+            <input
+              name="Email Address"
+              type="email"
+              id="email"
+              required
+              class="border border-gray-400 px-5 py-2 rounded-lg"
+              placeholder="Email Address"
+            />
+
+            <input
+              name="Contact Number"
+              type="text"
+              id="contactNumber"
+              required
+              class="border border-gray-400 px-5 py-2 rounded-lg"
+              placeholder="Contact Number"
+            />
+
+            <label for="sendUpdates" class="mt-2 leading-tight">
+              <input
+                name="Send Updates on Email"
+                type="checkbox"
+                id="sendUpdates"
+              />
+              HP may contact me with personalized offers, support updates, and
+              event news by e-mail
+            </label>
+
+            <button
+              class="px-6 mt-6 py-3 bg-[#fe4f4f] cursor-pointer rounded-full shadow-[0_10px_20px_rgb(254,79,79,0.3)] font-medium text-white"
+              type="submit"
+            >
+              Register Now
+            </button>
+          </form> -->
+
+          <form
+            class="mt-9 flex flex-col gap-2"
+            id="registrationform"
+            method="post"
+          >
+            <div class="grid grid-cols-2 gap-2">
+              <input
+                name="First Name"
+                type="text"
+                id="firstName"
+                required
+                class="border border-gray-400 px-5 py-2 rounded-lg"
+                placeholder="First Name"
+              />
+
+              <input
+                name="Last Name"
+                type="text"
+                id="lastName"
+                required
+                class="border border-gray-400 px-5 py-2 rounded-lg"
+                placeholder="Last Name"
+              />
+            </div>
+
+            <input
+              name="Organization"
+              type="text"
+              id="organization"
+              required
+              class="border border-gray-400 px-5 py-2 rounded-lg"
+              placeholder="Organization"
+            />
+
+            <input
+              name="Designation"
+              type="text"
+              id="designation"
+              required
+              class="border border-gray-400 px-5 py-2 rounded-lg"
+              placeholder="Designation"
+            />
+
+            <input
+              name="Email Address"
+              type="email"
+              id="email"
+              required
+              class="border border-gray-400 px-5 py-2 rounded-lg"
+              placeholder="Email Address"
+            />
+
+            <input
+              name="Contact Number"
+              type="text"
+              id="contactNumber"
+              required
+              class="border border-gray-400 px-5 py-2 rounded-lg"
+              placeholder="Contact Number"
+            />
+
+            <label for="sendUpdates" class="mt-2 leading-tight">
+              <input
+                name="Send Updates on Email"
+                type="checkbox"
+                id="sendUpdates"
+              />
+              HP may contact me with personalized offers, support updates, and
+              event news by e-mail
+            </label>
+
+            <button
+              class="px-6 mt-6 py-3 bg-[#fe4f4f] cursor-pointer rounded-full shadow-[0_10px_20px_rgb(254,79,79,0.3)] font-medium text-white"
+              type="submit"
+            >
+              Register Now
+            </button>
+          </form>
+        </div>
+        <div
+          class="max-[450px]:p-5 max-[450px]:mt-[40px] p-[40px] relative overflow-hidden flex flex-col justify-between w-full"
+        >
+          <div
+            class="absolute w-full bg-white z-10 h-[40px] left-0 bottom-0"
+          ></div>
+          <div
+            class="w-[50px] h-[500px] bg-[#024ad8] absolute -z-10 rotate-[30deg] right-[10%] sm:right-[30%] top-[70px]"
+          ></div>
+
+          <div
+            class="w-[50px] h-[500px] bg-[#024ad8] absolute max-[350px]:left-[25%] max-[450px]:top-[200px] -z-10 rotate-[30deg] left-[20%] sm:left-[30%] top-[250px] md:top-[150px]"
+          ></div>
+          <div
+            class="w-[190px] md:w-[200px] left-[20%] sm:left-[30%] max-[450px]:top-[220px] h-[40px] bg-white absolute z-10 top-[270px] md:top-[170px]"
+          ></div>
+
+          <div class="w-full h-[40px] bg-white absolute z-10 top-[80px]"></div>
+
+          <section
+            class="flex flex-col-reverse gap-5 lg:flex-row justify-between w-full relative z-40"
+          >
+            <section>
+              <h1 class="text-[30px] font-bold">Live Workshop</h1>
+
+              <p class="max-w-[400px] mt-2">
+                Highlight how POLY's solutions enable IT leaders to create a
+                unified, productive, and flexible hybrid work environment
+              </p>
+            </section>
+
+            <!-- <div class="size-[60px] bg-gray-200"></div> -->
+            <img src="./assets/hp.png" alt="Time" class="h-[60px] w-[60px]" />
+          </section>
+
+          <div
+            class="w-full h-[200px] mt-[100px] lg:mt-0 bg-white bg-cover bg-center"
+            style="background-image: url('./assets/Demo\ zone.png')"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- event highlights -->
+    <div class="flex flex-col gap-[30px]">
+      <div class="px-5 py-[50px] w-full bg-[#024ad8]">
+        <h1 class="text-[30px] text-white text-center font-bold">
+          Event Highlights
+        </h1>
+      </div>
+      <p class="text-center px-5">
+        Transform the way your team collaborates and thrives in a flexible,
+        digital-first world
+      </p>
+
+      <div class="flex justify-center px-[30px]">
+        <section
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[50px]"
+        >
+          <div
+            class="border border-[#024ad8] max-w-[300px] flex flex-col text-center items-center gap-3 p-5"
+          >
+            <div class="size-[70px] rounded-full bg-[#024ad8]"></div>
+            <h1 class="text-xl font-medium">Keynote Presentation</h1>
+            <p class="text-black/70">
+              Gain exclusive insights into HP and Poly&apos;s latest innovations
+              and product features.
+            </p>
+          </div>
+          <div
+            class="border border-[#024ad8] max-w-[300px] flex flex-col text-center items-center gap-3 p-5"
+          >
+            <div class="size-[70px] rounded-full bg-[#024ad8]"></div>
+            <h1 class="text-xl font-medium">Meet fellow Innovators</h1>
+            <p class="text-black/70">
+              Connect with a vibrant community of professionals and exchange
+              ideas around hybrid work success.
+            </p>
+          </div>
+          <div
+            class="border border-[#024ad8] max-w-[300px] flex flex-col text-center items-center gap-3 p-5"
+          >
+            <div class="size-[70px] rounded-full bg-[#024ad8]"></div>
+            <h1 class="text-xl font-medium">Live demos of new features</h1>
+            <p class="text-black/70">
+              Get hands-on with our latest product range & experience innovation
+              in action.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbycoJwSTVUI4A36onyquwXjCBJpn7Ubk_8bZzrTB2mX9Eqcok8TnBsGse51fApK-5bL/exec'; // Replace with your Web App URL
+      const form = document.getElementById('registrationform');
+      console.log(form);
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        formData.set(
+          'Send Updates on Email',
+          document.getElementById('sendUpdates').checked ? 'yes' : 'no',
+        );
+
+        fetch(scriptURL, {
+          method: 'POST',
+          body: formData,
+        })
+          .then((response) => response.json()) // Parse the JSON response
+          .then((data) => {
+            if (data.result === 'success') {
+              alert(
+                'Form submitted successfully! Check your email for confirmation.',
+              );
+              form.reset();
+            } else {
+              alert('Error submitting form: ' + data.message); // Show the error message
+            }
+          })
+          .catch((error) => {
+            alert('Error submitting form');
+            console.error('Error!', error.message);
+          });
+      });
+    </script> -->
+
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbycoJwSTVUI4A36onyquwXjCBJpn7Ubk_8bZzrTB2mX9Eqcok8TnBsGse51fApK-5bL/exec'; // Replace with your Web App URL
+      const form = document.getElementById('registrationform');
+      // const formElements = form.elements; // Get all form elements
+      const submitButton = form.querySelector('button'); // Get the submit button
+      const inputs = form.querySelectorAll('input');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Optionally change the button text or add a spinner
+        submitButton.textContent = 'Submitting...';
+        submitButton.disabled = true;
+
+        inputs.forEach((input) => (input.disabled = true));
+
+        // const formData = new FormData(form);
+
+        // // console.log(formData)
+        // for (const pair of formData.entries()) {
+        //   console.log(pair[0] + ': ' + pair[1]);
+        // }
+
+        // get all the values from
+        let name = document.getElementById('firstName').value;
+        let lastname = document.getElementById('lastName').value;
+        let organization = document.getElementById('organization').value;
+        let designation = document.getElementById('designation').value;
+        let email = document.getElementById('email').value;
+        let contactNumber = document.getElementById('contactNumber').value;
+        let sendUpdates = document.getElementById('sendUpdates').checked;
+
+        // create a new formData 
+        const formData = new FormData();
+        formData.append('First Name', name);
+        formData.append('Last Name', lastname);
+        formData.append('Organization', organization);
+        formData.append('Designation', designation);
+        formData.append('Email Address', email);
+        formData.append('Contact Number', contactNumber);
+
+        // const formData = new FormData(form);
+        for (const pair of formData.entries()) {
+          console.log(pair[0] + ': ' + pair[1]);
+        }
+
+        formData.set(
+          'Send Updates on Email',
+          document.getElementById('sendUpdates').checked ? 'yes' : 'no',
+        );
+
+        fetch(scriptURL, {
+          method: 'POST',
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            // Re-enable all form elements after the response is received
+            // for (let i = 0; i < formElements.length; i++) {
+            //   formElements[i].disabled = false;
+            // }
+
+            console.log(data);
+
+            submitButton.textContent = 'Register Now'; // Restore original button text
+            submitButton.disabled = false;
+
+            inputs.forEach((input) => (input.disabled = false));
+            inputs.forEach((input) => (input.value = ''));
+
+            if (data.result === 'success') {
+              alert(
+                'Form submitted successfully! Check your email for confirmation.',
+              );
+              form.reset();
+            } else {
+              alert('Error submitting form: ' + data);
+            }
+          })
+          .catch((error) => {
+            // Re-enable form elements in case of error
+            inputs.forEach((input) => (input.disabled = false));
+            submitButton.disabled = false;
+            inputs.forEach((input) => (input.value = ''));
+            submitButton.textContent = 'Register Now';
+            alert('Error submitting form');
+            console.error('Error!', error);
+          });
+      });
+    </script>
+  </body>
+</html>
