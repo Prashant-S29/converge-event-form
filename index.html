@@ -154,36 +154,46 @@
 
           <div class="px-5 w-full flex min-h-[400px]">
             <section class="grid h-fit gap-[30px] xl:gap-[50px]">
-              <div
-                class="flex gap-3 "
-              >
-                <img src="./assets/Venue.png" alt="Venue" class="w-[50px]" />
+              <div class="flex gap-3">
+                <img
+                  src="./assets/Venue.png"
+                  alt="Venue"
+                  class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px]"
+                />
 
                 <div>
                   <p class="text-sm font-bold">Venue</p>
                   <h4
-                    class="max-[450px]:text-lg leading-none text-xl mt-1 sm:-mt-1"
+                    class="max-[450px]:text-sm text-lg sm:leading-none text-xl max-[450px]:mt-0 mt-1 sm:-mt-1"
                   >
                     Welcome Hotel by ITC Hotels, Bengaluru
                   </h4>
                 </div>
               </div>
               <div class="flex gap-3">
-                <img src="./assets/Date.png" alt="Date" class="w-[50px]" />
+                <img
+                  src="./assets/Date.png"
+                  alt="Date"
+                  class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px]"
+                />
 
                 <div>
                   <p class="text-sm font-bold">Date</p>
-                  <h4 class="max-[450px]:text-lg text-xl -mt-1">
+                  <h4 class="max-[450px]:text-sm text-lg sm:text-xl -mt-1">
                     May 09, 2025
                   </h4>
                 </div>
               </div>
               <div class="flex gap-3">
-                <img src="./assets/Time.png" alt="Time" class="w-[50px]" />
+                <img
+                  src="./assets/Time.png"
+                  alt="Time"
+                  class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px]"
+                />
 
                 <div>
                   <p class="text-sm font-bold">Time</p>
-                  <h4 class="max-[450px]:text-lg text-xl -mt-1">
+                  <h4 class="max-[450px]:text-sm text-lg sm:text-xl -mt-1">
                     06:00 PM Onwards
                   </h4>
                 </div>
@@ -376,9 +386,11 @@
       </div>
     </div>
     <div
-      class="w-full max-[450px]:h-[120px] h-[250px] sm:h-[300px] md:h-[340px] lg:h-[400px] xl:h-[500px] border-b-[20px] sm:border-b-[30px] ms:border-b-[50px] border-[#024ad8] mt-[100px] lg:mt-[100px] bg-cover bg-center"
-      style="background-image: url('./assets/demo.png')"
-    ></div>
+      class="w-full relative "
+    >
+      <img src="./assets/demo.png" alt="demoZone" />
+      <div class="absolute left-0 -bottom-5 h-5 w-full bg-[#024ad8]"></div>
+    </div>
 
     <script>
       const scriptURL =
